@@ -1,0 +1,970 @@
+{
+	"status": "success",
+	"component": {
+		"data": {
+			"state": {
+				"values": {
+					"documentCategory": "welcomePackage",
+					"lineOfBusiness": [],
+					"year": [],
+					"state": [],
+					"yearOptions": [2000, 2001, 2002],
+					"healthPlan": [],
+					"wpTemplateType": [],
+					"templateType": [],
+					"templateName":"",
+					"claimIdnTemplateType": [],
+					"language": []
+				}
+			}
+		},
+		"visibility": {
+			"documentCategory": true,
+			"lineOfBusiness": true,
+			"year": true,
+			"state": true,
+			"showResultsAction": true,
+			"uploadAction": true,
+			"searchTemplateAction": true,
+			"resetButton": true,
+			"healthPlanFilter": true,
+			"templateType": true,
+			"languageFilter": true,
+			"wpTemplateType": true,
+			"claimIdnTemplateType": true
+		},
+		"dataScope": {
+			"options": {
+				"stateOptions": {
+					"refId": "",
+					"options": [
+						{
+							"name": "AL",
+							"title": {
+								"refId": "",
+								"value": "AL"
+							},
+							"value": "AL"
+						},
+						{
+							"name": "AK",
+							"title": {
+								"refId": "",
+								"value": "AK"
+							},
+							"value": "AK"
+						},
+						{
+							"name": "AZ",
+							"title": {
+								"refId": "",
+								"value": "AZ"
+							},
+							"value": "AZ"
+						},
+						{
+							"name": "AR",
+							"title": {
+								"refId": "",
+								"value": "AR"
+							},
+							"value": "AR"
+						},
+						{
+							"name": "CA",
+							"title": {
+								"refId": "",
+								"value": "CA"
+							},
+							"value": "CA"
+						},
+						{
+							"name": "CO",
+							"title": {
+								"refId": "",
+								"value": "CO"
+							},
+							"value": "CO"
+						},
+						{
+							"name": "CT",
+							"title": {
+								"refId": "",
+								"value": "CT"
+							},
+							"value": "CT"
+						},
+						{
+							"name": "DE",
+							"title": {
+								"refId": "",
+								"value": "DE"
+							},
+							"value": "DE"
+						},
+						{
+							"name": "DC",
+							"title": {
+								"refId": "",
+								"value": "DC"
+							},
+							"value": "DC"
+						},
+						{
+							"name": "FL",
+							"title": {
+								"refId": "",
+								"value": "FL"
+							},
+							"value": "FL"
+						},
+						{
+							"name": "GA",
+							"title": {
+								"refId": "",
+								"value": "GA"
+							},
+							"value": "GA"
+						},
+						{
+							"name": "HI",
+							"title": {
+								"refId": "",
+								"value": "HI"
+							},
+							"value": "HI"
+						},
+						{
+							"name": "ID",
+							"title": {
+								"refId": "",
+								"value": "ID"
+							},
+							"value": "ID"
+						},
+						{
+							"name": "IL",
+							"title": {
+								"refId": "",
+								"value": "IL"
+							},
+							"value": "IL"
+						},
+						{
+							"name": "IN",
+							"title": {
+								"refId": "",
+								"value": "IN"
+							},
+							"value": "IN"
+						},
+						{
+							"name": "IA",
+							"title": {
+								"refId": "",
+								"value": "IA"
+							},
+							"value": "IA"
+						},
+						{
+							"name": "KS",
+							"title": {
+								"refId": "",
+								"value": "KS"
+							},
+							"value": "KS"
+						},
+						{
+							"name": "KY",
+							"title": {
+								"refId": "",
+								"value": "KY"
+							},
+							"value": "KY"
+						},
+						{
+							"name": "LA",
+							"title": {
+								"refId": "",
+								"value": "LA"
+							},
+							"value": "LA"
+						},
+						{
+							"name": "ME",
+							"title": {
+								"refId": "",
+								"value": "ME"
+							},
+							"value": "ME"
+						},
+						{
+							"name": "MD",
+							"title": {
+								"refId": "",
+								"value": "MD"
+							},
+							"value": "MD"
+						},
+						{
+							"name": "MA",
+							"title": {
+								"refId": "",
+								"value": "MA"
+							},
+							"value": "MA"
+						},
+						{
+							"name": "MI",
+							"title": {
+								"refId": "",
+								"value": "MI"
+							},
+							"value": "MI"
+						},
+						{
+							"name": "MN",
+							"title": {
+								"refId": "",
+								"value": "MN"
+							},
+							"value": "MN"
+						},
+						{
+							"name": "MS",
+							"title": {
+								"refId": "",
+								"value": "MS"
+							},
+							"value": "MS"
+						},
+						{
+							"name": "MO",
+							"title": {
+								"refId": "",
+								"value": "MO"
+							},
+							"value": "MO"
+						},
+						{
+							"name": "MT",
+							"title": {
+								"refId": "",
+								"value": "MT"
+							},
+							"value": "MT"
+						},
+						{
+							"name": "NE",
+							"title": {
+								"refId": "",
+								"value": "NE"
+							},
+							"value": "NE"
+						},
+						{
+							"name": "NV",
+							"title": {
+								"refId": "",
+								"value": "NV"
+							},
+							"value": "NV"
+						},
+						{
+							"name": "NH",
+							"title": {
+								"refId": "",
+								"value": "NH"
+							},
+							"value": "NH"
+						},
+						{
+							"name": "NJ",
+							"title": {
+								"refId": "",
+								"value": "NJ"
+							},
+							"value": "NJ"
+						},
+						{
+							"name": "NM",
+							"title": {
+								"refId": "",
+								"value": "NM"
+							},
+							"value": "NM"
+						},
+						{
+							"name": "NY",
+							"title": {
+								"refId": "",
+								"value": "NY"
+							},
+							"value": "NY"
+						},
+						{
+							"name": "NC",
+							"title": {
+								"refId": "",
+								"value": "NC"
+							},
+							"value": "NC"
+						},
+						{
+							"name": "ND",
+							"title": {
+								"refId": "",
+								"value": "ND"
+							},
+							"value": "ND"
+						},
+						{
+							"name": "OH",
+							"title": {
+								"refId": "",
+								"value": "OH"
+							},
+							"value": "OH"
+						},
+						{
+							"name": "OK",
+							"title": {
+								"refId": "",
+								"value": "OK"
+							},
+							"value": "OK"
+						},
+						{
+							"name": "OR",
+							"title": {
+								"refId": "",
+								"value": "OR"
+							},
+							"value": "OR"
+						},
+						{
+							"name": "PA",
+							"title": {
+								"refId": "",
+								"value": "PA"
+							},
+							"value": "PA"
+						},
+						{
+							"name": "PR",
+							"title": {
+								"refId": "",
+								"value": "PR"
+							},
+							"value": "PR"
+						},
+						{
+							"name": "RI",
+							"title": {
+								"refId": "",
+								"value": "RI"
+							},
+							"value": "RI"
+						},
+						{
+							"name": "SC",
+							"title": {
+								"refId": "",
+								"value": "SC"
+							},
+							"value": "SC"
+						},
+						{
+							"name": "SD",
+							"title": {
+								"refId": "",
+								"value": "SD"
+							},
+							"value": "SD"
+						},
+						{
+							"name": "TN",
+							"title": {
+								"refId": "",
+								"value": "TN"
+							},
+							"value": "TN"
+						},
+						{
+							"name": "TX",
+							"title": {
+								"refId": "",
+								"value": "TX"
+							},
+							"value": "TX"
+						},
+						{
+							"name": "UT",
+							"title": {
+								"refId": "",
+								"value": "UT"
+							},
+							"value": "UT"
+						},
+						{
+							"name": "VT",
+							"title": {
+								"refId": "",
+								"value": "VT"
+							},
+							"value": "VT"
+						},
+						{
+							"name": "VA",
+							"title": {
+								"refId": "",
+								"value": "VA"
+							},
+							"value": "VA"
+						},
+						{
+							"name": "WA",
+							"title": {
+								"refId": "",
+								"value": "WA"
+							},
+							"value": "WA"
+						},
+						{
+							"name": "WV",
+							"title": {
+								"refId": "",
+								"value": "WV"
+							},
+							"value": "WV"
+						},
+						{
+							"name": "WI",
+							"title": {
+								"refId": "",
+								"value": "WI"
+							},
+							"value": "WI"
+						},
+						{
+							"name": "WY",
+							"title": {
+								"refId": "",
+								"value": "WY"
+							},
+							"value": "WY"
+						}
+					]
+				},
+				"documentCategory": {
+					"refId": "",
+					"options": [
+					  {
+						"name": "welcomePackage",
+						"title": {
+						  "refId": "displayTextWelcomePackage",
+						  "value": ""
+						},
+						"value": "welcomePackage"
+					  },
+					  {
+						"name": "UMLetters",
+						"title": {
+						  "refId": "displayTextUMLetters",
+						  "value": ""
+						},
+						"value": "UMLetters"
+					  },
+					  {
+						"name": "claimIDNLetters",
+						"title": {
+						  "refId": "displayTextClaimLetters",
+						  "value": ""
+						},
+						"value": "claimIDNLetters"
+					  }
+					]
+				  },
+				  "coverageOptions": {
+					"refId": "",
+					"options": [
+					  {
+						"name": "dental",
+						"title": {
+						  "refId": "displayTextDental",
+						  "value": ""
+						},
+						"value": "dental"
+					  },
+					  {
+						"name": "vision",
+						"title": {
+						  "refId": "displayTextVision",
+						  "value": ""
+						},
+						"value": "vision"
+					  }
+					]
+				  },
+				  "wpTemplateTypeOptions": {
+					  "refId": "",
+					  "options": [
+						{
+							"name": "masterPolicy",
+							"title": {
+								"refId": "displayTextMasterPolicy",
+								"value": ""
+							},
+							"value": "masterPolicy"
+						},
+						{
+							"name": "certificateOfCoverage",
+							"title": {
+								"refId": "displayTextCertificateOfCoverage",
+								"value": ""
+							},
+							"value": "certificateOfCoverage"
+						},
+						{
+							"name": "scheduleOfBenefits",
+							"title": {
+								"refId": "displayTextScheduleOfBenefits",
+								"value": ""
+							},
+							"value": "scheduleOfBenefits"
+						},
+						{
+							"name": "scheduleOfCoverageProcedure",
+							"title": {
+								"refId": "displayTextScheduleOfCoverageProcedure",
+								"value": ""
+							},
+							"value": "scheduleOfCoverageProcedure"
+						},
+						{
+							"name": "summaryOfBenefits",
+							"title": {
+								"refId": "displayTextSummaryOfBenefits",
+								"value": ""
+							},
+							"value": "summaryOfBenefits"
+						},
+						{
+							"name": "welcomeLetter",
+							"title": {
+								"refId": "displayTextWelcomeLetter",
+								"value": ""
+							},
+							"value": "welcomeLetter"
+						}
+					]
+				  },
+				  "claimIdnTemplateTypeOptions": {
+					"refId": "",
+					"options": [
+						{
+							"name": "claimDenial",
+							"title": {
+								"refId": "displayTextDenialLetter",
+								"value": ""
+							},
+							"value": "claimDenial"
+						},
+						{
+							"name": "claimCoverLetter",
+							"title": {
+								"refId": "displayTextCoverLetterMember",
+								"value": ""
+							},
+							"value": "claimCoverLetter"
+						}
+					  ]
+				  },
+				  "healthPlanOptions": {
+					"refId": "",
+					"options": [
+					  {
+						"name": "carePlus",
+						"title": {
+						  "refId": "displayTextCarePlus",
+						  "value": ""
+						},
+						"value": "carePlus"
+					  },
+					  {
+						"name": "FHK",
+						"title": {
+						  "refId": "displayTextFHK",
+						  "value": ""
+						},
+						"value": "FHK"
+					  },
+					  {
+						"name": "communiCare",
+						"title": {
+						  "refId": "displayTextCommuniCare",
+						  "value": ""
+						},
+						"value": "communiCare"
+					  },
+					  {
+						"name": "solis",
+						"title": {
+						  "refId": "displayTextSolis",
+						  "value": ""
+						},
+						"value": "solis"
+					  },
+					  {
+						"name": "UHP",
+						"title": {
+						  "refId": "displayTextUHP",
+						  "value": ""
+						},
+						"value": "UHP"
+					  },
+					  {
+						"name": "freedomHealth",
+						"title": {
+						  "refId": "displayTextFreedomHealth",
+						  "value": ""
+						},
+						"value": "freedomHealth"
+					  },
+					  {
+						"name": "optimumHealthcare",
+						"title": {
+						  "refId": "displayTextOptimumHealthcare",
+						  "value": ""
+						},
+						"value": "optimumHealthcare"
+					  },
+					  {
+						"name": "BCP",
+						"title": {
+						  "refId": "displayTextBCP",
+						  "value": ""
+						},
+						"value": "BCP"
+					  },
+					  {
+						"name": "DHCP",
+						"title": {
+						  "refId": "displayTextDHCP",
+						  "value": ""
+						},
+						"value": "DHCP"
+					  }
+					]
+				  },
+				  "languageOptions": {
+					"refId": "",
+					"options": [
+						{
+							"name": "english",
+							"title": {
+								"refId": "displayTextEnglish",
+								"value": ""
+							},
+							"value": "ENG"
+						},
+						{
+							"name": "spanish",
+							"title": {
+								"refId": "displayTextSpanish",
+								"value": ""
+							},
+							"value": "SPA"
+						}
+					]
+				  },
+				  "templateTypeOptions": {
+					"refId": "",
+					"options": [
+						{
+						  "name": "UMApproval",
+						  "title": {
+							"refId": "displayTextApprovalLetter",
+							"value": ""
+						  },
+						  "value": "UMApproval"
+						},
+						{
+						  "name": "UMDenial",
+						  "title": {
+							"refId": "displayTextDenialLetter",
+							"value": ""
+						  },
+						  "value": "UMDenial"
+						},
+						{
+						  "name": "UMCoverMember",
+						  "title": {
+							"refId": "displayTextCoverLetterMember",
+							"value": ""
+						  },
+						  "value": "UMCoverMember"
+						},
+						{
+						  "name": "UMCoverProvider",
+						  "title": {
+							"refId": "displayTextCoverLetterProvider",
+							"value": ""
+						  },
+						  "value": "UMCoverProvider"
+						}
+					  ]
+				  }
+			}
+		},
+		"elements": {
+			"labels": {
+				"displayTextWidgetTitle": "Browse Templates",
+				"displayTextDocumentCategory": "Document Category",
+				"displayTextLineOfBusiness": "Line Of Business",
+				"displayTemplateYear": "Year",
+				"displayTextState": "State",
+				"displayTextShowResults": "Show Results",
+				"displayTextUploadAction": "Upload Template",
+				"displayTextSearchAction": "Search Template",
+				"displayTextSearchPlaceholder": "Search Templates",
+				"displayTextAll": "ALL",
+				"displayTextDental": "Dental",
+				"displayTextVision": "Vision",
+				"displayTextWelcomePackage": " Welcome Package",
+				"displayTextUMLetters": "UM Letters",
+				"displayTextClaimLetters": "Claim Letters",
+				"displayTextAndMore": "and ${count} more",
+				"displayTextshowAll": "Show All",
+				"displayTextNoExactFound": "No exact matches found.",
+				"displayTextBack":"Back",
+				"displayTextCloseOverlay":"Close",
+				"displayTextReset":"Reset",
+				"displayTextApprovalLetter": "Approval Letter",
+				"displayTextDenialLetter": "Denial Letter",
+				"displayTextPartiallyApprovalLetter": "Partially Approval Letter",
+				"displayTextCoverLetter": "Cover Letter",
+				"displayTextHealthPlan:": "Health Plan",
+				"displayTextCarePlus": "CarePlus",
+				"displayTextFHK": "FHK",
+				"displayTextCommuniCare": "CommuniCare",
+				"displayTextSolis": "Solis",
+				"displayTextUHP": "UHP",
+				"displayTextFreedomHealth": "Freedom Health",
+				"displayTextOptimumHealthcare": "Optimum Healthcare",
+				"displayTextBCP": "BCP",
+				"displayTextDHCP": "DHCP",
+				"displayTextTemplateType": "Template Type",
+				"displayTextLanguage": "Language",
+				"displayTextEnglish": "English",
+				"displayTextSpanish": "Spanish",
+				"displayTextCoverLetterMember": "Cover Letter Member",
+				"displayTextCoverLetterProvider": "Cover Letter Provider",
+				"displayTextMasterPolicy": "Master Policy",
+				"displayTextCertificateOfCoverage": "Certificate of Coverage",
+				"displayTextScheduleOfBenefits": "Schedule of Benefits",
+				"displayTextScheduleOfCoverageProcedure": "Schedule of Coverage Procedure",
+				"displayTextSummaryOfBenefits": "Summary of Benefits",
+				"displayTextWelcomeLetter": "Welcome Letter"
+			},
+			"urls": {
+				"actionFiltersData": "/jsons/templateListing.json",
+				"fetchFilteredTemplatesList": "/jsons/filteredTeamplatesList.json"
+			}
+		},
+		"structure": {
+			"navigation":[
+				{
+					"name":"back",
+					"title":{
+					  "refId":"displayTextBack",
+					  "value":""
+					}
+				}
+			],
+			"title": {
+				"refId": "displayTextWidgetTitle",
+				"value": ""
+			},
+			"filtersMapping":[
+                {
+                    "name":"welcomePackage",
+                    "fields":[
+                       "documentCategory", "state","lineOfBusiness", "wpTemplateType"
+                    ]
+                },
+                {
+                    "name":"UMLetters",
+                    "fields":[
+                       "documentCategory", "healthPlan","year", "language", "templateType"
+					]
+				},
+				{
+					"name":"claimIDNLetters",
+					"fields": [
+						"documentCategory", "healthPlan","year", "language", "claimIdnTemplateType"
+					]
+				}
+			],
+			"filters": [
+				{
+					"name": "documentCategory",
+					"type": "singleSelect",
+					"options": "documentCategory",
+					"title": {
+						"refId": "displayTextDocumentCategory",
+						"value": ""
+					},
+					"visibility": "documentCategory"
+				},
+				{
+					"name": "lineOfBusiness",
+					"type": "multiSelect",
+					"options": "coverageOptions",
+					"title": {
+						"refId": "displayTextLineOfBusiness",
+						"value": ""
+					},
+					"visibility": "lineOfBusiness"
+				},
+				{
+					"name": "wpTemplateType",
+					"type": "multiSelect",
+					"options": "wpTemplateTypeOptions",
+					"title": {
+						"refId": "displayTextTemplateType",
+						"value": ""
+					},
+					"visibility": "wpTemplateType"
+				},
+				{
+					"name": "healthPlan",
+					"type": "multiSelect",
+					"options": "healthPlanOptions",
+					"title": {
+					  "refId": "displayTextHealthPlan:",
+					  "value": ""
+					},
+					"visibility": "healthPlanFilter"
+				  },
+				  {
+					"name": "claimIdnTemplateType",
+					"type": "multiSelect",
+					"options": "claimIdnTemplateTypeOptions",
+					"title": {
+						"refId": "displayTextTemplateType",
+						"value": ""
+					},
+					"visibility": "claimIdnTemplateType"
+				},
+				  {
+					"name": "templateType",
+					"type": "multiSelect",
+					"options": "templateTypeOptions",
+					"title": {
+						"refId": "displayTextTemplateType",
+						"value": ""
+					},
+					"visibility": "templateType"
+				},
+				  {
+					"name": "language",
+					"type": "multiSelect",
+					"options": "languageOptions",
+					"title": {
+					  "refId": "displayTextLanguage",
+					  "value": ""
+					},
+					"visibility": "langaugeFilter"
+					},
+				{
+					"name": "year",
+					"type": "multiSelect",
+					"options": "yearOptions",
+					"title": {
+						"refId": "displayTemplateYear",
+						"value": ""
+					},
+					"visibility": "year"
+				},
+				{
+					"name": "state",
+					"type": "multiSelect",
+					"options": "stateOptions",
+					"title": {
+						"refId": "displayTextState",
+						"value": ""
+					},
+					"visibility": "state"
+				}
+				
+			],
+			"filterAction": [
+				{
+					"name": "showResults",
+					"title": {
+						"refId": "displayTextShowResults",
+						"value": ""
+					},
+					"url": {
+						"refId": "actionFiltersData",
+						"params": {}
+					},
+					"visibility": "showResultsAction"
+				}
+			],
+			"actionsConfig": [
+				{
+					"name": "uploadAction",
+					"title": {
+						"refId": "displayTextUploadAction",
+						"params": {}
+					},
+					"visibility": "uploadAction"
+				},
+				{
+					"name": "searchTemplate",
+					"title": {
+						"refId": "displayTextSearchAction",
+						"params": {}
+					},
+					"placeholder": {
+						"refId": "displayTextSearchPlaceholder",
+						"value": ""
+					},
+					"noDataError":{
+						"refId": "displayTextNoExactFound",
+						"value": ""
+					},
+					"config":{
+						"showAll":{
+							"refId": "displayTextshowAll",
+							"params": {}
+						},
+						"closeOverlay":{
+							"refId": "displayTextCloseOverlay",
+							"params": {}
+						},
+						"pagination": {
+							"chunkSize": 3,
+							"startIndex": 0
+						}
+					},
+					"url": {
+						"refId": "fetchFilteredTemplatesList",
+						"params": {}
+					},
+					"visibility": "searchTemplateAction"
+				},
+				{
+					"name": "reset",
+					"title": {
+						"refId": "displayTextReset",
+						"value": ""
+					},
+					"visibility": "resetButton"
+				}
+			]
+		}
+	}
+}
