@@ -6,13 +6,17 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.18.0",
-    "react-router-dom": "^6.3.0"
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4",
     "nodemon": "^2.0.15"
   },
   "scripts": {
-  "start":"nodemon --watch backend --exec node  experimental-modules backend/server.js"
+    "start": "nodemon --watch backend --exec node  experimental-modules backend/server.js"
   },
   "repository": {
     "type": "git",
