@@ -17,7 +17,7 @@ function App() {
             <a href="/cart">Cart</a>
             <a href="/signin">Sign In</a>
           </div>
-        </header>
+        </header> 
         
         <main>
         <Route path="/" component={HomeScreen} exact></Route>
