@@ -21,7 +21,7 @@ const ProductScreen = (props) => {
     dispatch(detailsProduct(productId));
   }, [dispatch, productId]);
   const addToCartHandler = () => {
-    navigate(`cart/${productId}?qty=${qty}`);
+    navigate(`/cart/${productId}?qty=${qty}`);
   };
   return (
     <div className="">
