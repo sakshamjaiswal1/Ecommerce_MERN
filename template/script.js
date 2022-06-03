@@ -1,19 +1,14 @@
 
 
-function shekhar (){
-    let b ='ccc'
-    {
-    console.log(b)
+const findLargest =(numbers)=>{
+  let largest = numbers[0]
+  
+  for (let i = 0; i < numbers.length; i++) {
+   if( largest <numbers[i])
+   largest = numbers[i]
 
-    }
-}
-let d ='dd'
-shekhar()
-{
-    let c='kkk'
-    console.log(c)
-    {
-        console.log(d)
-    }
+  }
+console.log(largest)
 }
 
+findLargest([6666,1,-33,44,444,66])
