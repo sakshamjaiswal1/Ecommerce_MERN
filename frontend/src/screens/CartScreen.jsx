@@ -26,7 +26,7 @@ const CartScreen = () => {
     dispatch(removeFromCart(id))
   };
   const checkoutHandler = () => {
-    navigate("/signin?redirect to shipping");
+    navigate("/signin?redirect=/shipping");
   };
   return (
     <div className="row top">
