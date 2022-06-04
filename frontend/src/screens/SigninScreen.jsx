@@ -23,9 +23,7 @@ const SigninScreen = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(signin(email,password))
-   if(!error){
-    navigate('/')
-   }
+ 
    
     
   };

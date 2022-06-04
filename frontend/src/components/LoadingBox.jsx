@@ -2,7 +2,7 @@ import React from 'react'
 
 const LoadingBox = () => {
   return (
-    <div><i  className='fa fa-spinner fa-spin'>Loading...</i></div>
+    <div  className='loading'><i  className='fa fa-spinner fa-spin'>Loading...</i></div>
   )
 }
 
