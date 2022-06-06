@@ -4,6 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import PaymentMethodScreen from "./screens/PaymentMethodScreen";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import CartScreen from "./screens/CartScreen";
@@ -64,6 +65,7 @@ function App() {
             <Route  path='register' element={<RegisterScreen/>}  ></Route>
             <Route  path='/shipping' element={<ShippingAddressScreen/>}  ></Route>
             <Route  path='/payment' element={<PaymentMethodScreen/>}  ></Route>
+            <Route  path='/placeorder' element={<PlaceOrderScreen/>}  ></Route>
             <Route path="/product/:id" element={<ProductScreen />}></Route>
           </Routes>
         </main>
