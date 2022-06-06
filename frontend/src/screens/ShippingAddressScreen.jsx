@@ -11,8 +11,7 @@ const ShippingAddressScreen = () => {
     const navigation = useRef(useNavigate())
   const userSignin = useSelector(state=>state.userSignin)
     const { userInfo}=userSignin
-    // const cart = useSelector(state=>state.cart)
-    // const {shippingAddress}= cart
+   
  
     const [fullName, setFullName] = useState("");
   const [address, setAddress] = useState("");
@@ -23,6 +22,7 @@ const ShippingAddressScreen = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(saveShippingAddress({fullName,address,city,postalCode,country}))
+ 
     navigation.current('/payment')
   };
 useEffect(()=>{
@@ -53,6 +53,7 @@ if(shippingAddress){
         <div className="">
           <label htmlFor="fullName">Full Name</label>
           <input
+          id="fullName"
             type="text"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
@@ -63,6 +64,7 @@ if(shippingAddress){
         <div className="">
           <label htmlFor="address">Address</label>
           <input
+          id="address"
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
@@ -73,6 +75,7 @@ if(shippingAddress){
         <div className="">
           <label htmlFor="city">City</label>
           <input
+          id="city"
             type="text"
             value={city}
             onChange={(e) => setCity(e.target.value)}
@@ -83,6 +86,7 @@ if(shippingAddress){
         <div className="">
           <label htmlFor="postalCode">Postal Code</label>
           <input
+          id="postalCode"
             type="text"
             value={postalCode}
             onChange={(e) => setPostalCode(e.target.value)}
@@ -93,6 +97,7 @@ if(shippingAddress){
         <div className="">
           <label htmlFor="country"> Country</label>
           <input
+          country="country"
             type="text"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
