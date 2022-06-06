@@ -1,16 +1,47 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch,useSelector } from "react-redux";
 import CheckoutSteps from "../components/CheckoutSteps";
+import { saveShippingAddress } from "../actions/cartActions";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useRef } from "react";
 
 const ShippingAddressScreen = () => {
-  const [fullName, setFullName] = useState("");
+    const navigation = useRef(useNavigate())
+  const userSignin = useSelector(state=>state.userSignin)
+    const { userInfo}=userSignin
+    // const cart = useSelector(state=>state.cart)
+    // const {shippingAddress}= cart
+ 
+    const [fullName, setFullName] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [postalCode, setPostalCode] = useState("");
   const [country, setCountry] = useState("");
+  const dispatch=useDispatch()
   const submitHandler = (e) => {
     e.preventDefault();
+    dispatch(saveShippingAddress({fullName,address,city,postalCode,country}))
+    navigation.current('/payment')
   };
+useEffect(()=>{
+   
+
+    if(!userInfo){
+navigation.current('/signin')
+}
+const shippingAddress= JSON.parse( localStorage.getItem('shippingAddress'))
+
+if(shippingAddress){
+    setFullName(shippingAddress.fullName)
+    setAddress(shippingAddress.address)
+    setCity(shippingAddress.city)
+    setPostalCode(shippingAddress.postalCode)
+    setCountry(shippingAddress.country)
+
+}
+},[userInfo])
 
   return (
     <div>

@@ -11,7 +11,8 @@ const initialState = {
     userInfo:
 localStorage.getItem('userInfo')?JSON.parse(localStorage.getItem('userInfo')):null
   },
-  cart: { cartItems: localStorage.getItem('cartItems')?JSON.parse(localStorage.getItem('cartItems')):[]}
+  cart: { cartItems: localStorage.getItem('cartItems')?JSON.parse(localStorage.getItem('cartItems')):[]},
+  shippingAddress:localStorage.getItem('shippingAddress')?localStorage.getItem('shippingAddress'):{}
 };
 const reducer = combineReducers({
   productList: productListReducer,
