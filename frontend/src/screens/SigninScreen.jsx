@@ -9,11 +9,11 @@ import MessageBox from "../components/MessageBox";
 
 
 const SigninScreen = () => {
-  const navigate = useNavigate()
+ 
   const navigation = useRef(useNavigate())
   const {search} = useLocation()
   const searchSplit = search.split('=')[1]
-  const redirect = search?`/${searchSplit}`:`/`
+  const redirect = search?`${searchSplit}`:`/`
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch()

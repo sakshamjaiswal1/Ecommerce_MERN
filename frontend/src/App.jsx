@@ -3,6 +3,7 @@ import SigninScreen from "./screens/SigninScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import RegisterScreen from "./screens/RegisterScreen";
+import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import CartScreen from "./screens/CartScreen";
 import { useSelector ,useDispatch} from "react-redux";
@@ -60,6 +61,7 @@ function App() {
             <Route path="/" element={<HomeScreen />} exact></Route>
             <Route path='/signin' element={<SigninScreen/>}></Route>
             <Route  path='register' element={<RegisterScreen/>}  ></Route>
+            <Route  path='/shipping' element={<ShippingAddressScreen/>}  ></Route>
             <Route path="/product/:id" element={<ProductScreen />}></Route>
           </Routes>
         </main>
