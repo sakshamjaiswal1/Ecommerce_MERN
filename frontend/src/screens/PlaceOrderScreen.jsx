@@ -1,33 +1,45 @@
 import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { createdOrder } from "../actions/orderActions";
 import CheckoutSteps from "../components/CheckoutSteps";
+import { ORDER_CREATE_RESET } from "../constants/orderConstants";
+import LoadingBox from "../components/LoadingBox";
+import MessageBox from "../components/MessageBox";
 
 const PlaceOrderScreen = () => {
   const navigation = useRef(useNavigate());
   const cart = useSelector((state) => state.cart);
+  const orderCreate = useSelector((state) => state.orderCreate);
+  const { loading, success, error, order } = orderCreate;
   const shippingAddress = JSON.parse(localStorage.getItem("shippingAddress"));
   const paymentMethod = JSON.parse(localStorage.getItem("paymentMethod"));
   const { cartItems } = cart;
   const toPrice = (num) => Number(num.toFixed(2));
-  cart.itemPrice = toPrice(cartItems.reduce((a, c) => a + c.qty * c.price, 0));
-  cart.shippingPrice = cart.itemPrice > 100 ? toPrice(0) : toPrice(10);
-  cart.taxPrice = toPrice(cart.itemPrice * 0.15);
-  cart.totalPrice = cart.itemPrice + cart.shippingPrice + cart.taxPrice;
-  const placeOrderHandler=()=>{
-
-  }
+  cart.itemsPrice = toPrice(cartItems.reduce((a, c) => a + c.qty * c.price, 0));
+  cart.shippingPrice = cart.itemsPrice > 100 ? toPrice(0) : toPrice(10);
+  cart.taxPrice = toPrice(cart.itemsPrice * 0.15);
+  cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.taxPrice;
+  const dispatch = useDispatch();
+  const placeOrderHandler = () => {
+    dispatch(createdOrder({ ...cart, orderItems: cart.cartItems ,shippingAddress:shippingAddress,paymentMethod:paymentMethod}));
+  };
   useEffect(() => {
+    if (success) {
+      navigation.current(`/order/${order._id}`);
+      dispatch({ type: ORDER_CREATE_RESET });
+    }
     if (!shippingAddress) {
       navigation.current("/shipping");
     }
     if (cart.cartItems.length === 0) {
       navigation.current("/");
     }
-  }, [shippingAddress, cart]);
+   
+  }, [shippingAddress, cart, success, dispatch]);
   return (
     <div>
       <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
@@ -96,22 +108,22 @@ const PlaceOrderScreen = () => {
               <li>
                 <div className="row">
                   <div className="">Items</div>
-                  <div className="">${cart.itemPrice}</div>
+                  <div className="">${cart.itemsPrice}</div>
                 </div>
-                </li>
-                <li>
+              </li>
+              <li>
                 <div className="row">
                   <div className="">Shipping</div>
                   <div className="">${cart.shippingPrice}</div>
                 </div>
-                </li>
-                <li>
+              </li>
+              <li>
                 <div className="row">
                   <div className="">Tax</div>
                   <div className="">${cart.taxPrice}</div>
                 </div>
-                </li>
-                <li>
+              </li>
+              <li>
                 <div className="row">
                   <div className="">
                     {" "}
@@ -124,8 +136,18 @@ const PlaceOrderScreen = () => {
                 </div>
               </li>
               <li>
-                  <button type="button" className="primary block"  onClick={placeOrderHandler} disabled={cart.cartItems.length===0} > Place Order </button>
+                <button
+                  type="button"
+                  className="primary block"
+                  onClick={placeOrderHandler}
+                  disabled={cart.cartItems.length === 0}
+                >
+                  {" "}
+                  Place Order{" "}
+                </button>
               </li>
+              {loading && <LoadingBox></LoadingBox>}
+              {error && <MessageBox variant='danger' >{error}</MessageBox>}
             </ul>
           </div>
         </div>
