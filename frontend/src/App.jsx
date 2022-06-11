@@ -6,6 +6,7 @@ import RegisterScreen from "./screens/RegisterScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import PaymentMethodScreen from "./screens/PaymentMethodScreen";
+import OrderScreen from "./screens/OrderScreen";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import CartScreen from "./screens/CartScreen";
 import { useSelector ,useDispatch} from "react-redux";
@@ -66,6 +67,7 @@ function App() {
             <Route  path='/shipping' element={<ShippingAddressScreen/>}  ></Route>
             <Route  path='/payment' element={<PaymentMethodScreen/>}  ></Route>
             <Route  path='/placeorder' element={<PlaceOrderScreen/>}  ></Route>
+            <Route path="/order/:id" element={<OrderScreen />}></Route>
             <Route path="/product/:id" element={<ProductScreen />}></Route>
           </Routes>
         </main>

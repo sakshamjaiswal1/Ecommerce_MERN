@@ -28,6 +28,7 @@ const SigninScreen = () => {
     
   };
   useEffect(()=>{
+ 
     if(userInfo){
       navigation.current(redirect)
     }

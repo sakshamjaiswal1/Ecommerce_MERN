@@ -4,11 +4,12 @@ import { useDispatch,useSelector } from "react-redux";
 import CheckoutSteps from "../components/CheckoutSteps";
 import { saveShippingAddress } from "../actions/cartActions";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useRef } from "react";
 
 const ShippingAddressScreen = () => {
     const navigation = useRef(useNavigate())
+    const search = useLocation()
   const userSignin = useSelector(state=>state.userSignin)
     const { userInfo}=userSignin
    
@@ -26,7 +27,7 @@ const ShippingAddressScreen = () => {
     navigation.current('/payment')
   };
 useEffect(()=>{
-   
+  
 
     if(!userInfo){
 navigation.current('/signin')

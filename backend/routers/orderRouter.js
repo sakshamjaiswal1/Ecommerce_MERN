@@ -12,7 +12,7 @@ orderRouter.post('/',isAuth,expressAsyncHandler(async (req,res)=>{
     }
     else{
         const order = new Order({
-            orderIems:req.body.orderItems,
+            orderItems	:req.body.orderItems,
             shippingAddress:req.body.shippingAddress,
             paymentMethod:req.body.paymentMethod,
             itemsPrice:req.body.itemsPrice,
@@ -28,5 +28,14 @@ orderRouter.post('/',isAuth,expressAsyncHandler(async (req,res)=>{
         res.status(201).send({message:"New Order Created",order:createdOrder})
     }
 }))
+orderRouter.get('/:id',isAuth,expressAsyncHandler(async (req,res)=>{
+    const order = await Order.findById(req.params.id)
+    if(order){
+        res.status(200).send(order)
 
+    }
+    else{
+        res.status(404).send({message:"Order Not Found"})
+    }
+}))
 export default orderRouter
